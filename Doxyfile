@@ -1,0 +1,8 @@
+PROJECT_NAME           = "My Python Project"
+PROJECT_NUMBER         = 1.1.0
+OUTPUT_DIRECTORY       = docs
+INPUT                  = .
+RECURSIVE              = YES
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
