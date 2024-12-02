@@ -31,3 +31,13 @@ jobs:
     - name: Run tests
       run: |
         python -m pytest -p no:cacheprovider
+
+    - name: Install Doxygen
+      run: |
+        sudo apt update
+        sudo apt install doxygen
+
+    - name: Generate documentation
+      run: |
+        mkdir -p docs/html
+        doxygen Doxyfile
