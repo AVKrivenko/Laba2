@@ -27,7 +27,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-        - name: Run tests
+    - name: Run tests
       run: |
         python -m pytest -p no:cacheprovider
 
+    - name: Generate documentation
+      run: |
+        sphinx-build -b html docs/source docs/build
+
+    - name: Upload documentation as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: documentation
+        path: docs/build
