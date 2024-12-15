@@ -1,0 +1,9 @@
+.. _modules:
+
+Модули
+======
+
+.. automodule:: main
+   :members:
+   :undoc-members:
+   :show-inheritance:
