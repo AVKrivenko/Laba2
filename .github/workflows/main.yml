@@ -29,6 +29,5 @@ jobs:
 
         - name: Run tests
       run: |
-    pytest -p no:cacheprovider
-
+        python -m pytest -p no:cacheprovider
 
